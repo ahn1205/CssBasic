@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  /*전체 선택자로 모든기본 요소가 가지고 있는 패딩 마진을 없에는것*/
+            margin:0;
+            padding: 0;
+        }
+        .list {
+            width:50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+        .content {position: relative;}/* position: relative; 기반으로 떠오름 / 아니면 z축기반으로 */
+        p{border: 1px solid #777; height:100px; }
+        .inner1 {background-color: aqua}
+        .inner2 {background-color: blueviolet;
+            position: absolute;
+            left : 20px; /*left right 하나 top bottom하나 위치 조정을 반드시 해줘얗합니다 .*/
+            top: 20px;
+            width:50px;/*상자 크기*/
+            height:50px;/*상자 크기*/
+            } /**/
+        .inner3 {background-color: forestgreen}
+
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+</body>
+</html>
